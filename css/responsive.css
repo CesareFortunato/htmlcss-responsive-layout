@@ -43,8 +43,12 @@
     .quick-notes>ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         /* todo, margine tra i li */
+    }
+
+    .quick-notes li{
+        flex-basis: calc(100% / 3);
     }
 
     .ads {
@@ -61,6 +65,10 @@
 
     .recipe-name {
         font-size: 2.5rem;
+    }
+
+    .quick-notes>ul {
+        display: block;
     }
 
     .recipe-card {
