@@ -1,8 +1,22 @@
 /* Soluzione qui */
 
 /* 576px */
+@media screen and (min-width: 576px) {
+    .clearfix > img{
+        float: left;
+        margin-right: 10px;
+    }
 
+    .clearfix::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
 
+    .btn{
+        flex-basis: 100%;
+    }
+}
 
 /* 768px */
 
