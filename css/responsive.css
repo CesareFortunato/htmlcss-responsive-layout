@@ -2,23 +2,101 @@
 
 /* 576px */
 @media screen and (min-width: 576px) {
-    .clearfix > img{
+    .clearfix>img {
         float: left;
         margin-right: 10px;
     }
 
-    .clearfix::after{
+    .clearfix::after {
         content: "";
         display: table;
         clear: both;
     }
 
-    .btn{
+    .btn {
         flex-basis: 100%;
     }
 }
 
 /* 768px */
+@media screen and (min-width: 768px) {
+    #topbar {
+        justify-content: flex-start;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .recipe-name {
+        font-size: 2rem;
+    }
+
+    .recipe-origin {
+        display: inline;
+    }
+
+    .recipe-rating>div {
+        display: flex;
+    }
+
+    .quick-notes>ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* todo, margine tra i li */
+    }
+
+    .ads {
+        display: block;
+    }
+
+}
+
 
 
 /* 992 */
+
+@media screen and (min-width: 992px) {
+
+    .recipe-name {
+        font-size: 2.5rem;
+    }
+
+    .recipe-card {
+        display: flex;
+    }
+
+    .recipe-video {
+        width: 100%;
+    }
+
+    .recipe-info {
+        width: 40%;
+    }
+
+    .social-networks .label {
+        display: inline;
+        
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    footer address{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+
+    footer ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+
+}
